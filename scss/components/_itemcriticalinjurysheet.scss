@@ -1,6 +1,10 @@
 .item-sheet-criticalinjury {
+
+  .sheet-body {height: calc(100% - 4.5rem);}
+
   .flex-group-center {
     border: 0;
+    margin-bottom: 0.25rem;
   }
 
   .charname {
@@ -8,7 +12,7 @@
     
     input {
       color: rgb(131, 7, 7);
-      border: 0;
+      border: 0 none;
 
       &:focus {
         box-shadow: 0 0 5px rgb(125, 169, 194);
@@ -18,30 +22,10 @@
   }
 
   .block-background {
-    border-radius: 10px;
-    background-color: rgb(218, 151, 151);;
-    padding: 5px;
+    background-color: rgb(218, 151, 151);
 
     .block-title {
-        line-height: initial;
         background-color: rgb(131, 7, 7);
-        color: white;
-        font-size: 13px;
-        text-transform: uppercase;
-        margin:auto;
-        
-        --notchSize: 8px;
-        clip-path: 
-          polygon(
-            0% var(--notchSize), 
-            var(--notchSize) 0%, 
-            calc(100% - var(--notchSize)) 0%, 
-            100% var(--notchSize), 
-            100% calc(100% - var(--notchSize)), 
-            calc(100% - var(--notchSize)) 100%, 
-            var(--notchSize) 100%, 
-            0% calc(100% - var(--notchSize))
-        );
     }
   }
 
@@ -63,22 +47,8 @@
   }
 
   .block-background.block-editor {
-    height: calc(100% - 14em);
-    padding: 5px 10px;
-    background-color: rgb(255, 255, 255);;
-  }
-
-  .resource {
-    line-height: 40px;
-    width: 110px;
-    
-    &.single {
-      width: 250px;
-    }
-
-    &.split {
-      line-height: 30px;
-    }
+    height: 100%;
+    background-color: rgb(255, 255, 255);
   }
 
   .item-name {
