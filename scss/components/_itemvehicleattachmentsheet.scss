@@ -1,9 +1,5 @@
 .item-sheet-vehicle-attachment {
 
-  .header-fields {
-    height: 340px;
-  }
-
   .charname {
     width: 100%;
     
@@ -105,19 +101,6 @@
     }
     &.double {
       width: 235px;
-    }
-
-    input {
-      width: 45px;
-    }
-  }
-
-  .tabs {
-    height : 20px;
-    border: 0;
-
-    .item {
-      line-height: 15px;
     }
   }
 }

@@ -50,7 +50,7 @@
       height: 55px;
       margin: auto;
       border-radius: 10px;
-	  background: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.75);
       border: 2px solid rgba(0,0,0,0.5);
       .characteristic-value {
         height: 100%;
@@ -104,19 +104,6 @@
     }
     &.double {
       width: 235px;
-    }
-
-    input {
-      width: 45px;
-    }
-  }
-
-  .tabs {
-    height : 20px;
-    border: 0;
-
-    .item {
-      line-height: 15px;
     }
   }
 }
