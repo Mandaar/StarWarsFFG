@@ -24,9 +24,9 @@ form {
     .block-title {
       line-height: initial;
       color: white;
-      font-size: 12px;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      margin:auto;
+      margin: auto auto 0.25rem;
       background-color: rgb(73, 12, 11);
       line-height: 1rem;
       --notchSize: 8px;
@@ -44,6 +44,7 @@ form {
     }
 
     .block-attribute {
+      display: flex;
 
       select {
         &:focus {
@@ -53,7 +54,12 @@ form {
       }
 
       .block-value {
-        display: inline-block;
+        width: 50%;
+        margin: 0 0.25rem;
+        
+        &.block-single {
+         width: 100%;
+        }
       }
     }
 
@@ -92,7 +98,7 @@ form {
 .block-background-shadow {
   position: absolute;
   width: 100%;
-  top: 55%;
+  bottom: -0.95rem;
   height: 40px;
   background-color: rgb(125, 169, 194);
   padding: 0.9rem 0 0;
