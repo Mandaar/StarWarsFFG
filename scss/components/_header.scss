@@ -123,7 +123,7 @@
   }
 }
 
-.item-sheet-talent, .item-sheet-gear, .item-sheet-weapon, .item-sheet-armor, .item-sheet-vehicle-weapon, .item-sheet-vehicle-attachment {
+.item-sheet-talent, .item-sheet-gear, .item-sheet-weapon, .item-sheet-armor, .item-sheet-vehicle-weapon, .item-sheet-vehicle-attachment, .item-sheet-criticalinjury {
   .header-fields {
     h1 {
       font-size: 1rem;
@@ -134,7 +134,7 @@
     .profile-img {
       position: absolute;
       left: 0.5rem;
-      top: 2.5rem;
+      top: 0.5rem;
       height: 3rem;
       clip-path: none;
     }
