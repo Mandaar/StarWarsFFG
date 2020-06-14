@@ -1,4 +1,9 @@
 .injuries {
+  
+  .grid, .grid-2col {
+    margin: 0;
+  }
+  
   div.item {
     cursor: pointer;
   }
@@ -13,9 +18,12 @@
     border: 0;
   }
 
-  .resource {
+  &.resource {
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
     &.full {
-      width: 225px;
+      width: calc(100% - 3.5rem);
     }
   }
 
@@ -23,7 +31,7 @@
     line-height: initial;
     background-color: rgb(73, 12, 11);
     color: white;
-    font-size: 13px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     margin: auto;
     
