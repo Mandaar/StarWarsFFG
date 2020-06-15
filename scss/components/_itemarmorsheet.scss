@@ -16,19 +16,29 @@
   }
 
   .characteristic-item {
-    border:0;
     position: relative;
-    padding:0;
-    margin: 0 5px;
+    border:0;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    --notchSize: 7px;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+
+    .characteristic-label {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size : 0.6rem;
+      margin: 0.25rem 0 0;
+    }
 
     .characteristic {
       position: relative;
-      width: 55px;
-      height: 55px;
+      width: 3rem;
+      height: 3rem;
       margin: auto;
-      border-radius: 10px;
-	  background: rgba(255,255,255,0.75);
-      border: 2px solid rgba(0,0,0,0.5);
+      border-radius: 0.5rem;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(0,0,0,0.5);
       .characteristic-value {
         height: 100%;
         input {
@@ -40,13 +50,14 @@
           margin: 1px 0 0;
         }
         input:focus { 
-          box-shadow: 0 0 5px rgb(125, 169, 194);
-          background-color: rgb(125, 169, 194);
-          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(125, 170, 195,0.5);
+          background-color: rgba(125, 170, 195,0.25);
+          border-radius: 50%;
         }
       }
-  
-      
+      select {
+        width: 100px;
+      }      
     }
   }
 
@@ -59,7 +70,7 @@
     margin-top: 0;
   }
 
-  .block-background {
+  .characteristic-item, .block-background {
     background-color: rgb(233, 192, 158);
   }
 

@@ -16,42 +16,29 @@
   }
 
   .characteristic-item {
-    border:0;
     position: relative;
-    padding:0;
-    margin: 0 5px;
+    border:0;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    --notchSize: 7px;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 
     .characteristic-label {
-      margin-top: 5px;
       width: 100%;
       text-align: center;
-      background-color: rgb(19, 65, 3);
-      color:white;
       text-transform: uppercase;
-      font-size : 10px;
-      --notchSize: 7px;
-      
-      clip-path: 
-        polygon(
-          0% var(--notchSize), 
-          var(--notchSize) 0%, 
-          calc(100% - var(--notchSize)) 0%, 
-          100% var(--notchSize), 
-          100% calc(100% - var(--notchSize)), 
-          calc(100% - var(--notchSize)) 100%, 
-          var(--notchSize) 100%, 
-          0% calc(100% - var(--notchSize))
-        );
+      font-size : 0.6rem;
+      margin: 0.25rem 0 0;
     }
 
     .characteristic {
       position: relative;
-      width: 55px;
-      height: 55px;
+      width: 3rem;
+      height: 3rem;
       margin: auto;
-      border-radius: 10px;
+      border-radius: 0.5rem;
       background: rgba(255,255,255,0.75);
-      border: 2px solid rgba(0,0,0,0.5);
+      border: 1px solid rgba(0,0,0,0.5);
       .characteristic-value {
         height: 100%;
         input {
@@ -83,7 +70,7 @@
     margin-top: 0;
   }
 
-  .block-background {
+  .characteristic-item, .block-background {
     background-color: rgb(191,254,191);
   }
 
@@ -111,9 +98,6 @@
     }
     &.full {
       width: 100%;
-    }
-    input {
-      width: 45px;
     }
   }
 }
