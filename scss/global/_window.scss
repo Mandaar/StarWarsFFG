@@ -2,8 +2,13 @@
   font-family: $font-primary;
 
   .window-content {
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 9pt;
+    flex: 1;
+    display: block;
+    height: 100%;
+    overflow-y: hidden;
+    font-size: 10pt;
+    padding: 0;
+    background: rgb(216, 203, 192) url(../images/bgSheet.jpg) no-repeat;
   }
 }
 
