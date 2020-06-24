@@ -109,10 +109,7 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="container flex-group-center weapon-values">
-            <div class="resource single">
+            <div class="resource single qty">
               <div class="attribute flex-group-center">
                 <div class="block-background">
                   <div class="block-title">
@@ -124,7 +121,9 @@
                 </div>
               </div>
             </div>
-            <div class="resource double">
+          </div>
+          <div class="container flex-group-center weapon-values">
+            <div class="resource full">
               <div class="attribute flex-group-center">
                 <div class="block-background">
                   <div class="block-title">
@@ -175,12 +174,14 @@
         <li class="attribute flexrow" data-attribute="{{key}}">
           <input class="attribute-key" type="text" name="data.attributes.{{key}}.key" value="{{key}}" style="display: none;" />
           <select class="attribute-modtype" name="data.attributes.{{key}}.modtype">
-            {{#select attr.modtype}} {{#each ../this.FFG.mod_types as |t|}}
+            {{#select attr.modtype}} {{#each ../this.FFG.weapon_mod_types as |t|}}
             <option value="{{t.value}}">{{localize t.label}}</option>
             {{/each}} {{/select}}
           </select>
           <select class="attribute-mod" name="data.attributes.{{key}}.mod">
             {{#select attr.mod}} {{#iff attr.modtype '==' 'Stat' }} {{#each ../this.FFG.character_stats as |t|}}
+            <option value="{{t.value}}">{{localize t.label}}</option>
+            {{/each}} {{/iff}} {{#iff attr.modtype '==' 'Weapon Stat' }} {{#each ../this.FFG.weapon_stats as |t|}}
             <option value="{{t.value}}">{{localize t.label}}</option>
             {{/each}} {{/iff}} {{#iff attr.modtype '==' 'Skill Rank' }} {{#each ../this.FFG.skills as |t|}}
             <option value="{{t.value}}">{{localize t.label}}</option>
