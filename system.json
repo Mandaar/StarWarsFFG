@@ -38,7 +38,7 @@
   "primaryTokenAttribute": "wounds",
   "secondaryTokenAttribute": "strain",
   "url": "https://github.com/StarWarsFoundryVTT/StarWarsFFG",
-  "manifest": "https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json",
-  "download": "https://github.com/StarWarsFoundryVTT/StarWarsFFG/releases/download/v0.2/starwarsffg_0.21.zip",
+  "manifest": "https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json",
+  "download": "https://github.com/Mandaar/StarWarsFFG/archive/v0.2.zip",
   "license": "LICENSE.txt"
 }

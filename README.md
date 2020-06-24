@@ -15,7 +15,7 @@ This is most easily available from the in-game Module browser. After installing 
 2. Go to the "Game Systems" Tab
 3. Click the "Install System" button
 4. Copy the Following link into the "Manifest URL" section:
-   https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json
+   https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json
 5. Click Install, after a few seconds the system should be installed.
 6. Install (if not already done) "Special Dice Roller" module, see below for details.
 
