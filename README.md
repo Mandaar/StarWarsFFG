@@ -3,7 +3,7 @@
 This is an implementation of the [Fantasy Flight Games Star Wars](https://www.fantasyflightgames.com/en/starwarsrpg/) roleplaying system for [Foundry Virtual Tabletop](https://foundryvtt.com/).
 
 - For support on this game system : Discord [The Foundry](https://discord.gg/bNyxuk9) #starwars-ffg
-- Read this document in another language : [Français](https://github.com/StarWarsFoundryVTT/StarWarsFFG/blob/master/README-fr.md)
+- Read this document in another language : [Français](https://github.com/StarWarsFoundryVTT/Mandaar/blob/master/README-fr.md)
 
 # Requirements
 
@@ -18,7 +18,7 @@ This is most easily available from the in-game Module browser. After installing 
 2. Go to the "Game Systems" Tab
 3. Click the "Install System" button
 4. Copy the Following link into the "Manifest URL" section:
-   https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json
+   https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json
 5. Click Install, after a few seconds the system should be installed.
 6. Install (if not already done) "Special Dice Roller" module, see below for details.
 
