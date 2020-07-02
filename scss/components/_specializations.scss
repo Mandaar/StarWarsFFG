@@ -3,8 +3,14 @@
   min-height: 600px;
 
   .sheet-body {
-    height: calc(100% - 9rem);
+    height: calc(100% - 10.5rem);
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    background: transparent;
   }
+
+  .header-fields {padding-bottom: 0;}
 }
 
 .burst-8 {
