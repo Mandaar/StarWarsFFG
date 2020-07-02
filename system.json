@@ -37,8 +37,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "wounds",
   "secondaryTokenAttribute": "strain",
-  "url": "https://github.com/StarWarsFoundryVTT/StarWarsFFG",
-  "manifest": "https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json",
-  "download": "https://github.com/StarWarsFoundryVTT/StarWarsFFG/releases/download/v0.4/starwarsffg_0.4.zip",
+  "url": "https://github.com/Mandaar/StarWarsFFG",
+  "manifest": "https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json",
+  "download": "https://github.com/Mandaar/StarWarsFFG/releases/download/v0.4/starwarsffg_0.4.zip",
   "license": "LICENSE.txt"
 }
