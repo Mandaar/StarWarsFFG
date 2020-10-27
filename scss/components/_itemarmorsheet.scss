@@ -8,17 +8,7 @@
     }
   }
 
-  .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-armor-color
-    }
-
-    .characteristic {
-      border: 5px double $swffg-armor-color
-    }
-  }
-
-  .block-background {
+  .characteristic-item, .block-background {
     background-color: $swffg-armor-color-light
   }
 
@@ -27,8 +17,19 @@
       background-color: $swffg-armor-color;
     }
   }
-
-  .sheet-body {
-    height: calc(100% - 21.3125rem);
+  
+  .resource {
+    line-height: 30px;
+    width: 110px;
+    
+    &.split {
+      width: 130px;
+    }
+    &.single {
+      width: 100px;
+    }
+    &.double {
+      width: 235px;
+    }
   }
 }
