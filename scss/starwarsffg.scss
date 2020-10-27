@@ -12,6 +12,8 @@
 
 .starwarsffg {
   @import "components/forms";
+  @import "components/sheet";
+  @import "components/resource";
   @import "components/actorsheet_base";
   @import "components/block_base";
   @import "components/charactersheet";
@@ -22,6 +24,8 @@
   @import "components/dicepool";
   @import "components/editor";
   @import "components/tabs";
+  @import "components/header";
+  @import "components/characteristics";
   @import "components/skills";
   @import "components/items";
   @import "components/talents";
@@ -36,8 +40,10 @@
   @import "components/itemvehicleattachmentsheet";
   @import "components/groupmanager";
   @import "components/tooltip";
+  @import "components/attributes";
   @import "components/itemcriticalinjurysheet";
   @import "components/injuries";
+  @import 'components/damage';
   @import "components/forcepowers";
   @import "components/specializations";
   @import "components/dataimporter";
@@ -45,7 +51,6 @@
   @import "components/career";
   @import "components/modifiers";
   @import "components/signatureability";
-  @import "components/sendtochat";
 }
 
 @import "components/ogimport";
