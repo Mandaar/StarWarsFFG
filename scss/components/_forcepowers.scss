@@ -33,18 +33,19 @@
 
   .header-fields {
     .talent-body {
-      margin-top: 5px;
-      padding: 0 5px;
+      margin-top: 0.25rem;
+      padding: 0;
     }
   }
 
   .header-fields {
     position: relative;
+    padding-bottom: 0;
 
     .talent-actions {
       position: absolute;
-      right: 10px;
-      top: 14px;
+      right: 0.5rem;
+      top: 15px;
       color: white;
     }
 
@@ -54,16 +55,21 @@
   }
 
   .sheet-body {
+    height: calc(100% - 10.25rem);
     margin: 0;
-    height: calc(100% - 10rem);
+    padding: 0;
+    border: 0 none;
+    background: transparent;
   }
 
   .talent-cost {
-    bottom: -5px;
-    left: 7px;
+    bottom: 0;
+    left: 0.5rem;
     position: absolute;
     z-index: 10;
-    width: 60px;
+    width: 50%;
+    height: 1.75rem;
+    font-size: 0.75rem;
 
     input {
       width: 25px;
