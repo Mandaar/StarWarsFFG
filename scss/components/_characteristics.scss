@@ -1,0 +1,117 @@
+.characteristics {
+  height: 6rem;
+  fieldset.skillfilter {
+    display: none;
+  }
+  .characteristic-item {
+    position: relative;
+    background-color: rgba(84, 106, 83, 0.85);
+    border: 0;
+    --notchSize: 0.4rem;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+
+    .characteristic-label {
+      margin-top: 0.25rem;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(73, 12, 11, 0.85);
+      color: white;
+      text-transform: uppercase;
+      font-size : 0.7rem;
+      line-height: 1rem;
+      --notchSize: 0.25rem;
+      clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    }
+  }
+}
+
+.characteristic {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.5);
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+
+  select {
+    width: 100px;
+  }
+
+  .characteristic-value {
+    input {
+      height: 40px;
+      border: 0;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    input { 
+      height: 49px;
+      font-size: 2rem;
+      text-align: center;
+      border: 1px solid rgba(0,0,0,0.5);
+      border-radius: 50%;
+      margin: 1px 0 0;
+    }
+
+    input:focus {
+      box-shadow: 0 0 5px rgb(125, 169, 194);
+      background-color: rgb(125, 169, 194);
+    }
+  }
+}
+
+.item-sheet-gear, .item-sheet-talent, .item-sheet-weapon, .item-sheet-armor, .item-sheet-vehicle-weapon, .item-sheet-vehicle-attachment {
+
+  .characteristic-item {
+    position: relative;
+    border:0;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    --notchSize: 7px;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+
+    .characteristic-label {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size : 0.6rem;
+      margin: 0.25rem 0 0;
+    }
+
+    .characteristic {
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      margin: auto;
+      border-radius: 0.5rem;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(0,0,0,0.5);
+      .characteristic-value {
+        height: 100%;
+        input {
+          height: 100%;
+          border: 0;
+          font-size: 2rem;
+          text-align: center;
+          border-radius: 50%;
+          margin: 1px 0 0;
+        }
+        input:focus { 
+          box-shadow: 0 0 5px rgba(125, 170, 195,0.5);
+          background-color: rgba(125, 170, 195,0.25);
+          border-radius: 50%;
+        }
+      }
+      select {
+        width: 100px;
+      }      
+    }
+  }
+
+  .item-name {
+    margin:0;
+    padding-bottom:0 !important;
+  }
+}
