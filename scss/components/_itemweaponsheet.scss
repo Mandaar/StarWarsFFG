@@ -1,45 +1,26 @@
 .item-sheet-weapon {
-  $swffg-weapon-color: rgb(19, 65, 3);
-  $swffg-weapon-color-light:rgb(191,254,191);
 
   .charname {
+    width: 100%;
+    
     input {
-      color: $swffg-weapon-color;
-    }
-  }
-
-  .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-weapon-color;
-    }
-
-    .characteristic {
-      border: 5px double $swffg-weapon-color;
-
-      .adjustedvalues-left {
-        position: absolute;
-        top: 0;
-        right: 2px;
-        color: red;
-        &.positive {
-          color: green;
-        }
+      color: rgb(19, 65, 3);
+      border: 0;
+      
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
       }
     }
   }
 
-  .adjustedvalue {
-    color: red;
-    
-  }
-
-  .block-background {
-    background-color: $swffg-weapon-color-light;
+  .characteristic-item, .block-background {
+    background-color: rgb(191,254,191);
   }
 
   .attribute {
     .block-title {
-      background-color: $swffg-weapon-color;
+      background-color: rgb(19, 65, 3);
     }
   }
 
@@ -62,6 +43,8 @@
     }
   } 
 
+=======
+>>>>>>> Update _itemweaponsheet.scss
 }
 
 &.sheet {
