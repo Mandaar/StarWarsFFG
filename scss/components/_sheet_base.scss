@@ -17,6 +17,10 @@
   padding-bottom: 0;
 }
 
+.item-quantity {
+  position: relative;
+}
+
 .grid {
   margin-top: 0;
 }
@@ -175,4 +179,17 @@
 
 form {
   overflow: hidden;
+}
+
+.quantity {
+  position: absolute;
+  top: 0;
+  &.increase {
+    right: 25%;
+    cursor: pointer;
+  }
+  &.decrease {
+    left: 25%;
+    cursor: pointer;
+  }
 }

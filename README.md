@@ -13,7 +13,7 @@ The system for Foundry VTT contains no rules or proprietary content from the var
 For more info and documentation including various "How-To" guides, please check out the Wiki section of our GitHub repo.
 
 - For support on this game system : Discord [The Foundry](https://discord.gg/bNyxuk9) #starwars-ffg
-- Read this document in another language : [Français](https://github.com/StarWarsFoundryVTT/StarWarsFFG/blob/master/README-fr.md)
+- Read this document in another language : [Français](https://github.com/StarWarsFoundryVTT/Mandaar/blob/master/README-fr.md)
 
 # Installing Star Wars FFG game system
 
@@ -21,7 +21,7 @@ For more info and documentation including various "How-To" guides, please check 
 2. Go to the "Game Systems" Tab
 3. Click the "Install System" button
 4. Copy the Following link into the "Manifest URL" section:
-   https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json
+   https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json
 5. Click Install, after a few seconds the system should be installed.
 6. Install (if not already done) "Special Dice Roller" module, see below for details.
 
@@ -35,6 +35,12 @@ See our current production goals and progress [here](https://github.com/StarWars
 
 # Changelog
 
+- 24/10/2020 - Cstadther - Enhancement 394 - Added increase/decrease gear quantity from adversary gear list.
+- 24/10/2020 - Cstadther - Enhancement 394 - Added increase/decrease gear quantity from actor gear list, updated encumbrance calc to account for quantity.
+- 23/10/2020 - Cstadther - Fix 406 - Fixed issue with Blind GM Rolls and Self Rolls.
+- 23/10/2020 - Cstadther - Updated modifiers to correctly apply specialization skill ranks. OggDude Character Import Updates - correctly create Bonus Characteristic choices on talents and add species selected skill ranks
+- 23/10/2020 - Cstadther - Fix 401 - Added Encumbrance modifiers to OggDude importer, added Defensive modifier to OggDude Weapon importer.
+- 23/10/2020 - Cstadther - Fix 419 - Fixed bug where brawn and willpower were not be added correctly to wounds and strain, this will cause issues with 0.5 characters.
 - 22/10/2020 - Cstadther - Fixed issue with credits for non-characters.
 - 22/10/2020 - Esrin - Updated `system.json` with version, compatibility, manifest and download fields for v1.0 release!
 - 22/10/2020 - Cstadther - Enhancement 402 - Added comma display for credits.
