@@ -5,10 +5,6 @@
       .header-fields {
         flex: 1;
         height: auto;
-      
-        .block-background-shadow {
-          top: 36px;
-        }
 
         h1 {
           margin: 0;
@@ -33,24 +29,6 @@
           }
         }
       
-        .header-description-block {
-          margin-bottom: 5px;
-          margin-top: 5px;
-        }
-      
-        .header-description {
-          background-color: rgb(196, 219, 233);
-          --notchSize: 10px;
-          padding: 3px;
-      
-          clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-        }
-      
-        .table {
-          display: table;
-          width: 100%;
-        }
-      
         .row {
           display: table-row;
           width: 100%;
@@ -60,14 +38,13 @@
           }
       
           .row-input {
-            width:100%;
-            padding: 1px 5px;
       
             .specialization-pill, .species-pill, .career-pill {
-              padding: 3px 9px;
-              background-color: #aaa;
-              border: 1px solid black;
-              border-radius: 20px;
+              padding: 0.1rem 0.5rem;
+              background-color: rgba(255, 255, 255, 0.25);
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              border-radius: 1rem;
+              cursor: pointer;
       
               .item-delete {
                 cursor: pointer;
@@ -108,23 +85,7 @@
       }
       
       .sheet-body {
-        height: calc(100% - 13.75rem);
         overflow:hidden;
-
-        .biography {
-          height: calc(100% - 4.6875rem);
-          overflow:auto;
-        }
-
-        .characteristics {
-          overflow: hidden;
-          height: calc(100% + 26.25rem);
-        }
-
-        .skillsTablesGrid {
-          height: calc(100% - 32.1875rem);
-          overflow:auto;
-        }
       
         table {
           &.force-powers {
