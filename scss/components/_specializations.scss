@@ -20,8 +20,11 @@
   }
 
   .sheet-body {
+    height: calc(100% - 10.5rem);
     margin: 0;
-    height: calc(100% - 9rem);
+    padding: 0;
+    border: 0 none;
+    background: transparent;
   }
 
   input {
@@ -34,6 +37,8 @@
       }
     }
   }
+
+  .header-fields {padding-bottom: 0;}
 }
 
 .burst-8 {
