@@ -67,5 +67,19 @@
       height: calc(100% - 32.1875rem);
       overflow:auto;
     }
+    &.double {
+      width: 235px;
+    }
+  }
+
+  table.items {
+    margin: 1em 0;
+  }
+
+  .biography-editor {
+    height: 100%;
+  }
+  .grid, .items {
+    margin-top: 0.5rem;
   }
 }
