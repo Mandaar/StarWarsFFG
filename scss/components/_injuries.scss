@@ -1,5 +1,12 @@
 .injuries {
   width: 100%;
+  position: absolute;
+  top: 4.5rem;
+  
+  .grid, .grid-2col {
+    margin: 0;
+  }
+  
   div.item {
     cursor: pointer;
   }
@@ -14,12 +21,27 @@
     border: 0;
   }
 
-  .resource {
+  &.resource {
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
     &.full {
-      width: 400px;
+      width: calc(100% - 3.5rem);
     }
   }
 
+  .block-header {
+    line-height: initial;
+    background-color: rgba(73, 12, 11, 0.85);
+    color: white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin: auto;
+
+    --notchSize: 8px;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+  }
+  
   .item-controls {
     z-index: 500;
     text-align: end;
