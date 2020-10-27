@@ -8,17 +8,7 @@
     }
   }
 
-  .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-gear-color
-    }
-
-    .characteristic {
-      border: 5px double $swffg-gear-color
-    }
-  }
-
-  .block-background {
+  .characteristic-item, .block-background {
     background-color: $swffg-gear-color-light;
   }
 
@@ -28,9 +18,19 @@
     }
   }
 
-  .sheet-body {
-    height: calc(100% - 21.3125rem);
-    overflow:auto;
+  .resource {
+    line-height: 30px;
+    width: 110px;
+    
+    &.split {
+      width: 130px;
+    }
+    &.single {
+      width: 100px;
+    }
+    &.double {
+      width: 235px;
+    }
   }
 }
 
