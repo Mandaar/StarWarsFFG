@@ -1,0 +1,91 @@
+&.sheet {
+  &.actor {
+    min-width: 600px;
+    min-height: 525px;
+
+    &.adversary {
+      min-height: 100px;
+    }
+  }
+
+  .sheet-body {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 15.5rem);
+    overflow: auto;
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    background: rgba(255,255,255,0.25);
+    border-top : 1px solid rgba(135, 135, 135,1);
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(73, 12, 11, 0.85), rgba(0, 0, 0, 0)) 5%;
+
+    .tab {
+      height: 100%;
+      overflow: auto;
+    }
+    .editor {
+      width: 100%;
+      height: calc(100% - 1.5rem);
+    }
+  }
+
+  .sheet-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 0 0 100px;
+  }
+
+  .tabs {
+    .item {
+      &.active {
+        text-decoration: none;
+        text-shadow: none;
+      }
+    }
+  }
+  div {
+    &.container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 11pt;
+      .attributes {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+  
+  .character {
+    height: 100%;
+    overflow: hidden;
+    .sheet-body {
+      padding-top: 0.5rem;
+    }
+    .resource {
+      margin: 0.5rem 0.25rem 1.25rem;
+    }
+
+    .tab {
+      .resource {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  .resource {
+    padding: 0;
+    margin: 0.25rem;
+
+    input {
+      width: 100%;
+      height: 1.5rem;
+    }
+  }
+  select {
+    width: 100%;
+  }
+}
