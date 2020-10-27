@@ -14,7 +14,29 @@
     }
 
     .characteristic {
-      border: 5px double $swffg-talent-color;
+      position: relative;
+      width: 55px;
+      height: 55px;
+      margin: auto;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.75);
+      border: 2px solid rgba(0,0,0,0.5);
+      .characteristic-value {
+        height: 100%;
+        input {
+          height: 100%;
+          border: 0;
+          font-size: 2rem;
+          text-align: center;
+          border-radius: 50%;
+          margin: 1px 0 0;
+        }
+        input:focus { 
+          box-shadow: 0 0 5px rgb(125, 169, 194);
+          background-color: rgb(125, 169, 194);
+          border-radius: 5px;
+        }
+      }
     }
   }
 
@@ -28,8 +50,23 @@
     }
   }
 
-  .sheet-body {
-    height: calc(100% - 20.3125rem);
+  .resource {
+    line-height: 30px;
+    width: 110px;
+    
+    &.split {
+      width: 130px;
+    }
+    &.single {
+      width: 30%;
+    }
+    &.double {
+      width: 235px;
+    }
+
+    input {
+      width: 65px;
+      height: 17px;
+    }
   }
-  
 }
