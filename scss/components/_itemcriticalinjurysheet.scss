@@ -2,9 +2,28 @@
   $swffg-injury-color: rgb(131, 7, 7);
   $swffg-injury-color-light:rgb(218, 151, 151);
 
+  .sheet-header {
+    overflow: visible;
+  }
+
+  .sheet-body {
+    height: calc(100% - 4.25rem);
+  }
+
+  .flex-group-center {
+    border: 0;
+    margin-bottom: 0.25rem;
+  }
+
   .charname {
     input {
       color: $swffg-injury-color;
+      border: 0 none;
+
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
+      }
     }
   }
 
@@ -22,8 +41,12 @@
     border: 0;
   }
 
+  .resource {
+    width: 100%;
+  }
+
   .severity-select {
-    width: 185px;
+    width: 210px;
   }
 
   select {
@@ -38,9 +61,15 @@
   }
 
   .block-background.block-editor {
-    padding: 10px;
     background-color:$swffg-injury-color-light;
-    height: 8rem;
+    height: 100%;
+    min-height: 10rem;
+    height: 10rem;
+  }
+
+  .item-name {
+    margin: 0 !important;
+    padding: 0 5px !important;
   }
 
   .severity-block {
