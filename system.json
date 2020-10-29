@@ -39,6 +39,6 @@
   "secondaryTokenAttribute": "strain",
   "url": "https://github.com/Mandaar/StarWarsFFG",
   "manifest": "https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json",
-  "download": "https://github.com/Mandaar/StarWarsFFG/releases/download/v1.0/starwarsffg_1.01.zip",
+  "download": "https://github.com/Mandaar/StarWarsFFG/releases/download/v1.0/starwarsffg_1.02.zip",
   "license": "LICENSE.txt"
 }

@@ -1912,12 +1912,11 @@ img {
   padding: 5px;
 }
 
-.starwarsffg .biography .biography-values {
-  border: 0;
+.starwarsffg .biography .container.biography-values {
   position: absolute;
-  bottom: 2.5rem;
-  left: 0;
-  padding: 0;
+  width: calc(100% - 1rem);
+  left: 0.5rem;
+  bottom: 2rem;
 }
 
 .starwarsffg .biography .biography-editor {
@@ -1927,6 +1926,10 @@ img {
 .starwarsffg .biography .bio-grid {
   grid-column: span 5 / span 5;
   grid-template-columns: auto auto auto auto auto;
+}
+
+.starwarsffg .biography .resource.split {
+  width: 10rem;
 }
 
 .starwarsffg .item-sheet-weapon .charname {
@@ -2128,24 +2131,9 @@ img {
   width: 8.125rem;
 }
 
-.starwarsffg .minion .sheet-body {
-  height: calc(100% - 14.6875rem);
-  overflow: hidden;
-}
-
-.starwarsffg .minion .sheet-body .biography {
-  height: calc(100% - 4.6875rem);
-  overflow: auto;
-}
-
-.starwarsffg .minion .sheet-body .characteristics {
-  overflow: hidden;
-  height: calc(100% + 26.25rem);
-}
-
 .starwarsffg .minion .sheet-body .skillsTablesGrid {
-  height: calc(100% - 32.1875rem);
-  overflow: auto;
+  overflow-x: hidden;
+  height: calc(100% - 8.25rem);
 }
 
 .starwarsffg .minion .sheet-body.double {
@@ -2162,6 +2150,22 @@ img {
 
 .starwarsffg .minion .grid, .starwarsffg .minion .items {
   margin-top: 0.5rem;
+}
+
+.starwarsffg .minion .header-fields .resource {
+  width: auto;
+}
+
+.starwarsffg .minion .header-fields .resource:first-child {
+  margin-left: 0;
+}
+
+.starwarsffg .minion .header-fields .resource:last-child {
+  margin-right: 0;
+}
+
+.starwarsffg .minion .header-fields .resource.single {
+  width: auto;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .container.flex-group-center {
@@ -2587,9 +2591,9 @@ img {
 }
 
 .starwarsffg .injuries {
-  width: 100%;
+  width: calc(100% - 1rem);
   position: absolute;
-  top: 4.5rem;
+  top: 5rem;
 }
 
 .starwarsffg .injuries .grid, .starwarsffg .injuries .grid-2col {
