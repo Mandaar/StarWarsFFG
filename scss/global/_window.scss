@@ -32,6 +32,10 @@ section {
   }
 }
 
+.sidebar-tab {
+  height: 100%;
+}
+
 .hidden-content {
   @include hide;
 }
