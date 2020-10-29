@@ -1,7 +1,7 @@
 .header-fields {
   flex: 1;
   height: auto;
-  padding: 0.5rem;
+  padding: 0.25rem;
   margin: 0;
 
   .container.flex-group-center {
@@ -108,10 +108,14 @@
   }
 
   .resource {
-    width: 25%;
+    flex: 4;
     &:first-child {margin-left: 0;}
     &:last-child {margin-right: 0;}
-    &.single {width: 20.5%;}
+  }
+  .full {
+    .resource {
+      &.double {width: 100%;}
+    }
   }
 }
 
@@ -120,9 +124,10 @@
     h1 {
       font-size: 1rem;
       input {
-        padding-left: 130px;
+        padding-left: 3rem;
         margin: 0;
         width: 100%;
+        text-align: center;
       }
     }
     .profile-img {
@@ -130,7 +135,10 @@
       left: 0.5rem;
       top: 0.5rem;
       height: 3rem;
+      max-width: 3rem;
       clip-path: none;
+      object-fit: cover;
+      object-position: 50% 0;
     }
   .item-name {
     padding: 0;
