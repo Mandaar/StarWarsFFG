@@ -50,22 +50,10 @@
   }
 
   .sheet-body {
-    height: calc(100% - 14.6875rem);
-    overflow:hidden;
-
-    .biography {
-      height: calc(100% - 4.6875rem);
-      overflow:auto;
-    }
-
-    .characteristics {
-      overflow: hidden;
-      height: calc(100% + 26.25rem);
-    }
 
     .skillsTablesGrid {
-      height: calc(100% - 32.1875rem);
-      overflow:auto;
+      overflow-x:hidden;
+      height: calc(100% - 8.25rem);
     }
     &.double {
       width: 235px;
@@ -81,5 +69,14 @@
   }
   .grid, .items {
     margin-top: 0.5rem;
+  }
+
+  .header-fields {
+    .resource {
+      width: auto;
+      &:first-child {margin-left: 0;}
+      &:last-child {margin-right: 0;}
+      &.single {width: auto;}
+    }
   }
 }
