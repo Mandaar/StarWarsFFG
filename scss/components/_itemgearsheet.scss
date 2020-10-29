@@ -17,19 +17,4 @@
       background-color: $swffg-gear-color;
     }
   }
-
-  .resource {
-    line-height: 30px;
-    width: 110px;
-    
-    &.split {
-      width: 130px;
-    }
-    &.single {
-      width: 100px;
-    }
-    &.double {
-      width: 235px;
-    }
-  }
 }

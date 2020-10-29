@@ -1,12 +1,12 @@
 {
   "name": "starwarsffg",
-  "title": "Star Wars FFG",
-  "description": "A system for playing Star Wars FFG games.",
+  "title": "Star Wars Edge/FFG - Multi - Graphical Alt",
+  "description": "Fan-Made System for Star Wars Edge/FFG Role PLaying Game. Multi-language: EN, FR, DE, ES - Graphical Alternative to StarWarsFFG Original System <p> - Foundry <a href='https://discord.gg/foundryvtt'>Discord EN</a></p><p> - Rejoignez la communauté Francophone <a href='https://discord.gg/pPSDNJk'>Discord FR - https://discord.gg/pPSDNJk</a></p>",
   "version": "1.2",
   "minimumCoreVersion": "0.7.3",
   "compatibleCoreVersion": "0.7.9",
   "templateVersion": 1,
-  "author": "Esrin, CStadther and Jaxxa",
+  "author": "StarWarsFoundryVTT Team, Customized by Mandar",
   "esmodules": ["modules/dice-pool-ffg.js", "modules/swffg-main.js"],
   "styles": ["styles/starwarsffg.css", "lib/select2/select2.min.css", "lib/pure/grids-min.css"],
   "scripts": ["lib/select2/select2.min.js", "lib/jszip/jszip.min.js", "lib/jxon/jxon.min.js"],
@@ -19,14 +19,14 @@
       "path": "lang/en.json"
     },
     {
-      "lang": "de",
-      "name": "Deutsch (German)",
-      "path": "lang/de.json"
-    },
-    {
       "lang": "fr",
       "name": "Français (French)",
       "path": "lang/fr.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch (German)",
+      "path": "lang/de.json"
     },
     {
       "lang": "es",

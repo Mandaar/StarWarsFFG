@@ -12,17 +12,23 @@
     min-height: 100px;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 15.5rem);
+    height: 100%;
     overflow: auto;
     margin: 0 0.25rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     background: rgba(255,255,255,0.25);
     border-top : 1px solid rgba(135, 135, 135,1);
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(73, 12, 11, 0.85), rgba(0, 0, 0, 0)) 5%;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $swffg-tableheader-background, rgba(0, 0, 0, 0)) 5%;
 
     .tab {
       height: 100%;
       overflow: auto;
+      padding: 0;
+      &.characteristics {
+        > div.grid {
+          padding: 0.25rem 0;
+        }
+      }
     }
     .editor {
       width: 100%;
@@ -62,9 +68,6 @@
   .character {
     height: 100%;
     overflow: hidden;
-    .sheet-body {
-      padding-top: 0.5rem;
-    }
     .resource {
       margin: 0.5rem 0.25rem 1.25rem;
     }
@@ -87,5 +90,17 @@
   }
   select {
     width: 100%;
+  }
+  header {
+    &.sheet-header {
+      h1 {
+        input {
+          height: 3rem;
+          line-height: 3rem;
+          margin: 0.5rem 0;
+          width: 100%;
+        }
+      }
+    }
   }
 }

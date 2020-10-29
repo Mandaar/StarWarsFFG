@@ -1,16 +1,26 @@
 .minion {
   flex: auto;
+  .sheet-header {
+    .minion-name {
+      flex: 1;
+      flex-wrap: wrap;
 
-  .minion-name {
-    flex: 1;
-    flex-wrap: wrap;
+      h1{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        input {
+          margin: 0;
+          color: $swffg-tableheader-background;
+        }
+      }
 
-    input {
-      border: 0;
+      input {
+        border: 0;
 
-      &:focus {
-        box-shadow: 0 0 5px $swffg-input-background;
-        background-color: $swffg-input-background;
+        &:focus {
+          box-shadow: 0 0 5px $swffg-input-background;
+          background-color: $swffg-input-background;
+        }
       }
     }
   }
@@ -53,7 +63,7 @@
 
     .skillsTablesGrid {
       overflow-x:hidden;
-      height: calc(100% - 8.25rem);
+      height: calc(100% - 22rem);
     }
     &.double {
       width: 235px;

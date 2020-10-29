@@ -34,13 +34,13 @@
   .item.active {
     height: 2.5rem;
     line-height: 2rem;
-    background-color: rgba(73, 12, 11, 0.85);
+    background-color: $swffg-tableheader-background;
     color: rgba(255,255,255,1);
-    background-color: rgba(73, 12, 11, 0.85);
+    background-color: $swffg-tableheader-background;
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% 100%, 0 100%, 0% 0%, 0% 100%);
 
     &:hover {
-      background-color: rgba(73, 12, 11, 0.85);
+      background-color: $swffg-tableheader-background;
       cursor: default;
     }
   }

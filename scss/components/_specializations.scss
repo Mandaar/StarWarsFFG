@@ -42,29 +42,29 @@
 }
 
 .burst-8 {
-  z-index: -1;
-  left:7px;
-  background: white;
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  text-align: center;
-  transform: rotate(20deg);
+    z-index: -1;
+    left: 0.4rem;
+    background: rgba(255,255,255,0.5);
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    text-align: center;
+    transform: rotate(20deg);
 }
 .burst-8:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 26px;
-  width: 26px;
-  background: white;
+  height: 1rem;
+  width: 1rem;
+  background: rgba(255,255,255,0.5);
   transform: rotate(135deg);
 }
 
 div.conflict {
-  height: 23px;
-  width: 22px;
+  height: 1rem;
+  width: 1rem;
   position: absolute;
   background: red;
   left: 9px;

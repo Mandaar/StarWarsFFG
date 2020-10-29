@@ -117,7 +117,7 @@
 .injuries {
   .attribute {
     .block-title {
-      background-color: rgba(73, 12, 11, 0.85);
+      background-color: $swffg-tableheader-background;
     }
   }
 }
@@ -144,7 +144,7 @@
 }
 
 .shadow-left {
-  background-color: rgba(73, 12, 11, 0.85);
+  background-color: $swffg-tableheader-background;
   width: 50%;
   height: 100%;
   float:left;

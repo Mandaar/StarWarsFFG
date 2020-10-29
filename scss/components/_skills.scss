@@ -32,10 +32,10 @@
 .skillsTablesGrid {
   position: relative; 
   overflow: auto; 
-  height: calc(100% - 5.5rem); 
+  height: calc(100% - 20.5rem); 
   float: left;
   width: 100%;
-  padding-top: 0.5rem;
+  padding: 0.25rem;
 }
 
 .skillsGrid {
@@ -45,7 +45,7 @@
   align-content: flex-start;
   max-height: 600px;
   width: 100%;
-  padding: 0 0.25rem;
+  padding: 0;
 
   > .skillTypeGrid {
     margin-left: 0.25rem;
