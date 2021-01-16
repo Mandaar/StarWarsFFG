@@ -1,5 +1,16 @@
+.skill-name {
+  position: relative;
+  font-size: 0.75rem;
+  padding-right: 1.5rem;
+}
+
 .skill-characteristic {
   display: inline;
+  font-size: 0.65rem;
+  font-style: italic;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
 }
 
 .skill-characteristic-select-dialog {
@@ -30,12 +41,13 @@
 }
 
 .skillsTablesGrid {
-  position: relative; 
-  overflow: auto; 
-  height: calc(100% - 5.5rem); 
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 5rem);
   float: left;
   width: 100%;
-  padding-top: 0.5rem;
+  padding: 0.25rem 0.25rem 0.25rem 0;
 }
 
 .skillsGrid {
@@ -45,7 +57,7 @@
   align-content: flex-start;
   // max-height: 800px;
   width: 100%;
-  padding: 0 0.25rem;
+  padding: 0;
 
   > .skillTypeGrid {
     margin-left: 0.25rem;
@@ -58,11 +70,16 @@
   .skillTypeGrid {
     flex: 0 1 auto;
     flex-direction: column;
+    margin: 0 0 0.5rem;
+    padding: 0;
+    border-color: rgba(0, 0, 0, .1);
+    --notchSize: 0.5rem;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% 100%, 0 100%, 0% 0%, 0% 100%);
 
     &.skillColumnGrid {
       border: 1px solid #7a7971;
       background: rgba(0, 0, 0, 0.05);
-      flex: 50%;
+      flex: calc(50% - 0.25rem);
     }
   }
 
@@ -71,11 +88,6 @@
   }
 
   .skillTable {
-    margin: 0 0 0.5rem;
-    padding: 0;
-    border-color: rgba(0, 0, 0, .1);
-    --notchSize: 0.5rem;
-    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 
     .skillsHeader {
       line-height: 1.313rem;
@@ -105,15 +117,15 @@
 
         &:first-of-type {
           text-align: left;
-          padding-left: 3px;
-          padding-top: 7px;
+          padding-left: 0.25rem;
+          padding-top: 0.25rem;
         }
       }
 
       input[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-        margin: 2px 5px;
+        width: 1rem;
+        height: 1rem;
+        margin: 0.25rem;
       }
     }
 
@@ -123,8 +135,9 @@
     }
 
     .careerskill-rank {
-      margin-top: 2px;
-      width: 30px;
+      margin-top: 0.25rem;
+      height: 1.5rem;
+      width: 1.75rem;
       text-align: center;
     }
   }

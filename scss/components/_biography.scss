@@ -1,11 +1,10 @@
 .biography {
 
-  .biography-values {
-    border: 0;
+  .container.biography-values {
     position: absolute;
-    bottom: 2.5rem;
-    left: 0;
-    padding: 0;
+    width: calc(100% - 1rem);
+    left: 0.5rem;
+    bottom: 3rem;
   }
 
   .biography-editor {
@@ -15,5 +14,10 @@
   .bio-grid {
     grid-column: span 5 / span 5;
     grid-template-columns: auto auto auto auto auto;
+  }
+  .resource {
+    &.split {
+     width: 10rem;
+    }
   }
 }

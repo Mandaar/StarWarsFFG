@@ -12,7 +12,6 @@
 
 .starwarsffg {
   @import "components/forms";
-  @import "components/sheet";
   @import "components/resource";
   @import "components/actorsheet_base";
   @import "components/block_base";
@@ -43,7 +42,6 @@
   @import "components/attributes";
   @import "components/itemcriticalinjurysheet";
   @import "components/injuries";
-  @import 'components/damage';
   @import "components/forcepowers";
   @import "components/specializations";
   @import "components/dataimporter";

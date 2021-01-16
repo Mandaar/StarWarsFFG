@@ -6,13 +6,14 @@
     overflow: visible;
   }
 
-  .sheet-body {
-    height: calc(100% - 4.25rem);
-  }
-
-  .flex-group-center {
-    border: 0;
-    margin-bottom: 0.25rem;
+  .header-fields {
+    .container {
+      &.flex-group-center {
+        &.full {
+          margin-top: 1rem;
+        }
+      }
+    }
   }
 
   .charname {
@@ -45,10 +46,6 @@
     width: 100%;
   }
 
-  .severity-select {
-    width: 210px;
-  }
-
   select {
     &:focus {
       box-shadow: 0 0 5px $swffg-input-background;
@@ -62,34 +59,10 @@
 
   .block-background.block-editor {
     background-color:$swffg-injury-color-light;
-    height: 100%;
-    min-height: 10rem;
-    height: 10rem;
-  }
-
-  .item-name {
-    margin: 0 !important;
-    padding: 0 5px !important;
+    height: 12.5rem;
   }
 
   .severity-block {
     position: relative;
-  }
-
-  .sheet-body {
-    height: calc(100% - 19.375rem);
-  }
-  
-}
-
-&.sheet {
-  &.item {
-    &.v2 {
-      .item-sheet-criticalinjury {
-        .sheet-body {
-          height: calc(100% - 18.75rem);
-        }
-      }
-    }
   }
 }
