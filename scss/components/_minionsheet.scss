@@ -1,16 +1,41 @@
 .minion {
   flex: auto;
+  .sheet-header {
+    .minion-name {
+      flex: 1;
+      flex-wrap: wrap;
 
-  .minion-name {
-    flex: 1;
-    flex-wrap: wrap;
+      h1{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        input {
+          margin: 0;
+          color: $swffg-tableheader-background;
+        }
+      }
 
-    input {
-      border: 0;
+      input {
+        border: 0;
 
-      &:focus {
-        box-shadow: 0 0 5px $swffg-input-background;
-        background-color: $swffg-input-background;
+        &:focus {
+          box-shadow: 0 0 5px $swffg-input-background;
+          background-color: $swffg-input-background;
+        }
+      }
+    }
+    .tab {
+      height: 100%;
+      padding: 0;
+      &.characteristics {
+      overflow: hidden;
+        > div.grid {
+          padding: 0.25rem 0;
+        }
+      }
+    }
+    .profile-block {
+      .block-background {
+        background: rgba(255, 255, 255, 0.5);
       }
     }
   }
@@ -43,30 +68,7 @@
     object-fit: contain;
   }
 
-  .resource {
-    &.single {
-      width: 8.125rem;
-    }
-  }
-
   .sheet-body {
-    height: calc(100% - 14.6875rem);
-    overflow:hidden;
-
-    .biography {
-      height: calc(100% - 4.6875rem);
-      overflow:auto;
-    }
-
-    .characteristics {
-      overflow: hidden;
-      height: calc(100% + 26.25rem);
-    }
-
-    .skillsTablesGrid {
-      height: calc(100% - 32.1875rem);
-      overflow:auto;
-    }
     &.double {
       width: 235px;
     }
@@ -79,24 +81,17 @@
   .biography-editor {
     height: 100%;
   }
-  .grid, .items {
-    margin-top: 0.5rem;
-  }
-}
 
-&.sheet {
-  &.actor {
-    &.v2 {
-      .minion {
-        .sheet-body {
-          .skillsTablesGrid {
-            height: calc(100% - 31.10rem);
-          }
-        }
-        .profile-block {
-          margin-right: 8px;
-        }
-      }
+  .header-fields {
+    .resource {
+      &:first-child {margin-left: 0;}
+      &:last-child {margin-right: 0;}
+      &.single {flex: auto;}
+    }
+  }
+  &.v2 {
+    .sheet-body {
+      height: calc(100% - 13.5rem);
     }
   }
 }

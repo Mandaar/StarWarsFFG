@@ -75,3 +75,11 @@
     }
   }
 }
+
+.skillsGrid .skillTable div.skill {
+    &:last-child {
+      .tooltip2 {
+        bottom: 2rem;
+      }
+    }
+}

@@ -32,7 +32,7 @@
       text-align: left;
       padding: 0.25rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-      background-color: rgba(73, 12, 11, 0.85);
+      background-color: $swffg-tableheader-background;
       color: white;
       font-size: 12px;
       font-weight: normal;
@@ -44,7 +44,6 @@
   
   .resource {
     line-height: 1rem;
-    width: 25%;
   }
 
   .item-values {
@@ -117,15 +116,20 @@
     margin: 5px 5px 5px 0;
     padding-right: 5px;
     font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
     .tag {
       display: inline-block;
       margin: 0 2px 0 0;
       padding: 0 3px;
       font-size: 10px;
       line-height: 16px;
-      border: 1px solid rgba(100, 100, 100, 1);
+      border: 1px solid rgba(0, 0, 0, 0.5);
       border-radius: 3px;
       background: rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      padding: 0;
+      margin: 0.25rem 0;
     }
   }
 
@@ -157,16 +161,14 @@
     .item-properties {
       .item-pill {
         list-style-type: none;
-        padding: 0 5px;
-        background-color: #aaa;
-        border: 1px solid black;
-        border-radius: 12px;
         display: inline-block;
-        margin: 1px;
         cursor: pointer;
-        font-size: 12px;
-        line-height: 20px;
         white-space: nowrap;
+        padding: 0.1rem 0.5rem;
+        margin: 0.1rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 1rem;
     
         &.adjusted {
           color: #8b0000;

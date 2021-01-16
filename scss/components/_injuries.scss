@@ -1,7 +1,7 @@
 .injuries {
   width: 100%;
   position: absolute;
-  top: 4.5rem;
+  top: 5rem;
   
   .grid, .grid-2col {
     margin: 0;
@@ -35,13 +35,13 @@
     top: 5rem;
     left: 1.5rem;
     &.full {
-      width: calc(100% - 3.5rem);
+      flex: calc(100% - 3.5rem);
     }
   }
 
   .block-header {
     line-height: initial;
-    background-color: rgba(73, 12, 11, 0.85);
+    background-color: $swffg-tableheader-background;
     color: white;
     font-size: 0.75rem;
     text-transform: uppercase;

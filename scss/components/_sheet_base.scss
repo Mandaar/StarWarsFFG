@@ -12,6 +12,99 @@
   }
 }
 
+&.sheet {
+  .sheet-body {
+    height: calc(100% - 15.75rem);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(135, 135, 135,1);
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $swffg-tableheader-background, rgba(0, 0, 0, 0)) 5%;
+
+    .tab {
+      height: 100%;
+      padding: 0;
+      &.characteristics {
+      overflow: hidden;
+        > div.grid {
+          padding: 0 0.6rem 0.5rem 0;
+        }
+      }
+    }
+    .editor {
+      width: 100%;
+      height: calc(100% - 1.5rem);
+    }
+  }
+  &.v2 {
+    .sheet-body {
+      height: calc(100% - 14.5rem);
+    }
+  }
+
+  .sheet-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 0 0 100px;
+  }
+
+  .tabs {
+    .item {
+      &.active {
+        text-decoration: none;
+        text-shadow: none;
+      }
+    }
+  }
+  div {
+    &.container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 11pt;
+      .attributes {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+  
+  .character {
+    height: 100%;
+    overflow: hidden;
+    .resource {
+      margin: 0.5rem 0.25rem 1.25rem;
+    }
+
+    .tab {
+      .resource {
+        margin-top: 0;
+      }
+    }
+  }
+  select {
+    width: 100%;
+  }
+  header {
+    &.sheet-header {
+      h1 {
+        input {
+          height: 3rem;
+          line-height: 3rem;
+          margin: 0.5rem 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 .item-name {
   margin: 0;
   padding-bottom: 0;
@@ -121,7 +214,7 @@
 .injuries {
   .attribute {
     .block-title {
-      background-color: rgba(73, 12, 11, 0.85);
+      background-color: $swffg-tableheader-background;
     }
   }
 }
@@ -148,7 +241,7 @@
 }
 
 .shadow-left {
-  background-color: rgba(73, 12, 11, 0.85);
+  background-color: $swffg-tableheader-background;
   width: 50%;
   height: 100%;
   float:left;

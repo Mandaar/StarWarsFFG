@@ -49,36 +49,4 @@
       background-color: $swffg-talent-color;
     }
   }
-
-  .resource {
-    line-height: 30px;
-    width: 110px;
-    
-    &.split {
-      width: 130px;
-    }
-    &.single {
-      width: 30%;
-    }
-    &.double {
-      width: 235px;
-    }
-
-    input {
-      width: 65px;
-      height: 17px;
-    }
-  }
-}
-
-&.sheet {
-  &.item {
-    &.v2 {
-      .item-sheet-talent {
-        .sheet-body {
-          height: calc(100% - 19.3125rem);
-        }        
-      }
-    }
-  }
 }

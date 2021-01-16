@@ -24,10 +24,6 @@
     }
   }
 
-  .sheet-body {
-    height: calc(100% - 27.5rem);
-  }
-
   .pills {
     &.itemmodifier, &.itemattachment {
       width: auto;
@@ -42,9 +38,6 @@
       }
     }
   } 
-
-=======
->>>>>>> Update _itemweaponsheet.scss
 }
 
 &.sheet {
