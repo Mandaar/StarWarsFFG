@@ -1,0 +1,149 @@
+.header-fields {
+  flex: 1;
+  height: auto;
+  padding: 0.25rem;
+  margin: 0;
+
+  h1, h2, h3, h4 {
+    margin: 0 0 0.25rem;
+    padding: 0;
+    font-weight: normal;
+  }
+
+  h1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header-name {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    width: 100%;
+    background: rgba(150, 150, 150, 0.25);
+    --notchSize: 0.5rem;
+    clip-path: polygon(0% 0, 0 0%, 0 0%, 100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+
+    input {
+      width: 100%;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0);
+      border: 0 none;
+      border-radius: 0;
+      font-family: "StarJedi", sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
+      }
+    }
+
+    h2 {
+      border: 0 none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      border-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 1%;
+
+      input {
+        font-size: 1.5rem;
+        color: rgba(120, 20, 40, 1);
+      }
+    }
+  }
+
+  .header-description-block {
+    margin: 0;
+    height: 130px;
+    overflow-y: auto;
+  }
+
+  .header-description {
+    background-color: rgba(195, 220, 230,1);
+    padding: 0.25rem;
+    --notchSize: 0.5rem;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+  }
+
+  .table {
+    display: table;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    padding: 0.2rem 0 0;
+    border: 0 none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 1%;
+
+    &:last-child {border: 0 none;}
+
+    div {
+      float: left;
+      padding: 0.25rem;
+      line-height: 1rem;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: rgba(0,0,0,0.5);
+    }
+  }
+
+  .profile-block {
+    margin: 0 0.25rem 0 0;
+    height: 130px;
+    max-width: 130px;
+  }
+
+  .profile-img {
+    flex: 0 0 100px;
+    height: 130px;
+    width: auto;
+    max-width: 130px;
+    border: 0;
+    margin: auto;
+    object-fit: contain;
+    --notchSize: 0.5rem;
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+  }
+
+  .resource {
+    flex: 4;
+    &:first-child {margin-left: 0;}
+    &:last-child {margin-right: 0;}
+  }
+  .full {
+    .resource {
+      &.double {flex: 100%;}
+    }
+  }
+}
+
+.item-sheet-talent, .item-sheet-gear, .item-sheet-weapon, .item-sheet-armor, .item-sheet-vehicle-weapon, .item-sheet-vehicle-attachment, .item-sheet-criticalinjury {
+  .header-fields {
+    h1 {
+      font-size: 1rem;
+      input {
+        padding-left: 3rem;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .profile-img {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      height: 3rem;
+      max-width: 3rem;
+      clip-path: none;
+      object-fit: cover;
+      object-position: 50% 0;
+    }
+  .item-name {
+    padding: 0;
+    text-align: left;
+    }
+  }
+}

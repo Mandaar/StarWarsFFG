@@ -1,19 +1,7 @@
 &.sheet {
   &.item {
-    .popout-editor {
-      height: 50px;
-      width: 215px;
-    }
     .tab[data-tab].active {
       height:100%;
-    }
-    .tabs {
-      height : 20px;
-      border: 0;
-      
-      .item {
-        line-height: 15px;
-      }
     }
 
     .characteristic {
@@ -37,7 +25,6 @@
   }
 
   .sheet-body {
-    margin: 10px 5px;
     overflow: auto;
   }
 
@@ -54,16 +41,14 @@
 
   .item-pill {
     list-style-type: none;
-    padding: 0 5px;
-    background-color: #aaa;
-    border: 1px solid black;
-    border-radius: 12px;
-    float: left;
-    margin: 1px;
+    display: inline-block;
     cursor: pointer;
-    font-size: 12px;
-    line-height: 20px;
     white-space: nowrap;
+    padding: 0.1rem 0.5rem;
+    margin: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
 
     &.adjusted {
       color: #8b0000;
@@ -86,23 +71,5 @@
 
   .add-new-item {
     cursor: pointer;
-  }
-}
-
-&.sheet {
-  &.item {
-    &.v2 {
-      .sheet-body {
-        margin : 0px 5px;
-      }
-      .tabs {
-        .item {
-          line-height: normal;
-          &.active {
-            color: rgb(73, 12, 11);
-          }
-        }
-      }
-    }
   }
 }

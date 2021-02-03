@@ -1,79 +1,32 @@
 .item-sheet-vehicle-weapon {
-  $swffg-weapon-color: rgb(31, 28, 55);
-  $swffg-weapon-color-light:rgb(204,202,227);
+  
+  .popout-editor {
+    height: 100%;
+    width: 100%;
+  }
 
   .charname {
+    width: 100%;
+    
     input {
-      color: $swffg-weapon-color;
+      color: rgb(31, 28, 55);
+      border: 0;
+      
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
+      }
     }
+
   }
 
-  .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-weapon-color;
-    }
-
-    .characteristic {
-      border: 5px double $swffg-weapon-color;
-    }
-  }
-
-  .block-background {
-    background-color: $swffg-weapon-color-light;
-  }
-
-  .attribute {
-    .block-title {
-      background-color: $swffg-weapon-color;
-    }
+  .characteristic-item, .block-background {
+    background-color: rgb(204,202,227);
   }
   
-  .firing-arcs {
-    gap: 0px;
-    text-align: left;
-    padding: 0 10px;
-    line-height: 20px;
-
-    label {
-      display: inline-block;
-      padding-left: 15px;
-      text-indent: -15px;
-      font-size: .675rem;
-    }
-    
-    input[type="checkbox"] {
-    
-      position: relative;
-      padding: 0;
-      margin: 0;
-      width: 13px;
-      height: 13px;
-    }
-  }
-
-  .sheet-body {
-    height: calc(100% - 34.6875rem);
-  }
-}
-
-&.sheet {
-  &.item {
-    &.v2 {
-      .item-sheet-vehicle-weapon {
-        .container.flex-group-center {
-          padding: 0 5px 0 5px;
-          margin-bottom: 0;
-        }
-         
-        .weapon-values {
-          margin: 0 5px;
-          padding: 0 5px 0 5px;
-        }
-
-        .sheet-body {
-          height: calc(100% - 17.3125rem);
-        }
-      }
+  .attribute {
+    .block-title {
+      background-color: rgb(31, 28, 55);
     }
   }
 }

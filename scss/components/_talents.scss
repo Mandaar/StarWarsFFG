@@ -2,6 +2,35 @@
   margin: 0;
 }
 
+table {
+  &.force-powers {
+    border: 0;
+
+    th {
+      text-align: left;
+      padding: 3px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      background-color: $swffg-tableheader-background;
+      color: white;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    td {
+      height: 30px;
+      line-height: 24px;
+      padding: 3px;
+      position: relative;
+
+      .item-controls {
+        text-align: right;
+        width: auto;
+        z-index: auto;
+      }
+    }
+  }
+}
+
 .talent-list {
   border: 0;
   padding: 0;
@@ -34,6 +63,17 @@
     margin: auto;
     .item-control {
       padding: 5px;
+    }
+  }
+}
+
+.sheet-header {
+  .header-fields {
+    .talents-header {
+      .header-name {
+        font-size: 2rem;
+        text-align: left;
+      }
     }
   }
 }

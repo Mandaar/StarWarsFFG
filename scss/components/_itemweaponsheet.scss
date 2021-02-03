@@ -1,28 +1,39 @@
 .item-sheet-weapon {
-  $swffg-weapon-color: rgb(19, 65, 3);
-  $swffg-weapon-color-light:rgb(191,254,191);
+  $swffg-weapon-color: rgb(191,254,191);
+  $swffg-weapon-bg-color: rgb(19, 65, 3);
+
 
   .charname {
+    width: 100%;
+    
     input {
-      color: $swffg-weapon-color;
+      color: $swffg-weapon-bg-color;
+      border: 0;
+      
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
+      }
     }
   }
 
+  .characteristic-item, .block-background {
+    background-color: $swffg-weapon-color;
+  }
+
   .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-weapon-color;
-    }
-
     .characteristic {
-      border: 5px double $swffg-weapon-color;
-
       .adjustedvalues-left {
         position: absolute;
         top: 0;
-        right: 2px;
-        color: red;
+        right: 0;
+        background: red;
+        color: white;
+        width: 1rem;
+        border-radius: 0 0.5rem;
+        border: 1px solid transparent;
         &.positive {
-          color: green;
+          background: green;
         }
       }
     }
@@ -30,21 +41,12 @@
 
   .adjustedvalue {
     color: red;
-    
-  }
-
-  .block-background {
-    background-color: $swffg-weapon-color-light;
   }
 
   .attribute {
     .block-title {
-      background-color: $swffg-weapon-color;
+      background-color: $swffg-weapon-bg-color;
     }
-  }
-
-  .sheet-body {
-    height: calc(100% - 27.5rem);
   }
 
   .pills {
@@ -61,7 +63,6 @@
       }
     }
   } 
-
 }
 
 &.sheet {
