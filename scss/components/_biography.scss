@@ -1,19 +1,60 @@
 .biography {
-  .biography-values {
-    margin-bottom: 5px;
-    border: 0;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    padding: 0;
-  }
-
+  
   .biography-editor {
-    height: 85%;
+    height: 70%;
   }
 
   .bio-grid {
     grid-column: span 5 / span 5;
     grid-template-columns: auto auto auto auto auto;
+  }
+  .resource {
+    &.split {
+     width: 10rem;
+    }
+  }
+}
+
+&.actor {
+  .biography {
+    .container {
+      &.biography-values {
+        height: 30%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: initial;
+      }
+    }
+  }
+}
+
+.sheet-body {
+  .biography {
+    .editor {
+      height: 100%;
+    }
+  }
+}
+
+&.actor {
+  .vehicle {
+    .biography {
+      .biography-editor {
+        height: 42%;
+      }
+      .container {
+        &.biography-values {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: initial;
+          .block-title {
+            font-size: 0.6rem;
+          }
+          .resource {
+            flex: 15%;
+          }
+        }
+      }
+    }
   }
 }

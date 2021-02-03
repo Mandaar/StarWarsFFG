@@ -33,7 +33,7 @@
     
   }
 
-  .block-background {
+  .characteristic-item, .block-background {
     background-color: $swffg-armor-color-light;
   }
 
@@ -41,10 +41,6 @@
     .block-title {
       background-color: $swffg-armor-color;
     }
-  }
-
-  .sheet-body {
-    height: calc(100% - 21.3125rem);
   }
 
   .pills {
@@ -75,10 +71,6 @@
         .weapon-values {
           margin: 0 5px;
           padding: 0 5px 0 5px;
-        }
-
-        .sheet-body {
-          height: calc(100% - 17.3125rem);
         }
       }
     }

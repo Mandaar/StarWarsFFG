@@ -13,7 +13,7 @@ The system for Foundry VTT contains no rules or proprietary content from the var
 For more info and documentation including various "How-To" guides, please check out the Wiki section of our GitHub repo.
 
 - For support on this game system : Discord [The Foundry](https://discord.gg/bNyxuk9) #starwars-ffg
-- Read this document in another language : [Français](https://github.com/StarWarsFoundryVTT/StarWarsFFG/blob/master/README-fr.md)
+- Read this document in another language : [Français](https://github.com/Mandaar/StarWarsFFG/blob/master/README-fr.md)
 
 # Installing Star Wars FFG game system
 
@@ -21,7 +21,7 @@ For more info and documentation including various "How-To" guides, please check 
 2. Go to the "Game Systems" Tab
 3. Click the "Install System" button
 4. Copy the Following link into the "Manifest URL" section:
-   https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json
+   https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json
 5. Click Install, after a few seconds the system should be installed.
 
 # Getting Started

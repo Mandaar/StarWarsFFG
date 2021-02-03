@@ -1,0 +1,15 @@
+.resource-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.resource {
+  flex: 25%;
+  padding: 0;
+  margin: 0.25rem;
+
+  input {
+    width: 100%;
+    height: 1.5rem;
+  }
+}

@@ -1,16 +1,22 @@
 .item-sheet-vehicle-weapon {
-  $swffg-weapon-color: rgb(31, 28, 55);
-  $swffg-weapon-color-light:rgb(204,202,227);
-
-  .charname {
-    input {
-      color: $swffg-weapon-color;
-    }
+  $swffg-weapon-color: rgb(191,254,191);
+  
+  .popout-editor {
+    height: 100%;
+    width: 100%;
   }
 
-  .characteristic-item {
-    .characteristic-label {
-      background-color: $swffg-weapon-color;
+  .charname {
+    width: 100%;
+    
+    input {
+      color: rgb(31, 28, 55);
+      border: 0;
+      
+      &:focus {
+        box-shadow: 0 0 5px rgb(125, 169, 194);
+        background-color: rgb(125, 169, 194);
+      }
     }
 
     .characteristic {
@@ -32,10 +38,10 @@
     color: red;
   }
 
-  .block-background {
-    background-color: $swffg-weapon-color-light;
+  .characteristic-item, .block-background {
+    background-color: $swffg-weapon-color;
   }
-
+  
   .attribute {
     .block-title {
       background-color: $swffg-weapon-color;
@@ -63,10 +69,6 @@
       width: 13px;
       height: 13px;
     }
-  }
-
-  .sheet-body {
-    height: calc(100% - 34.6875rem);
   }
 
   .pills {
@@ -98,11 +100,8 @@
           margin: 0 5px;
           padding: 0 5px 0 5px;
         }
-
-        .sheet-body {
-          height: calc(100% - 17.3125rem);
-        }
       }
+      background-color: rgb(31, 28, 55);
     }
   }
 }

@@ -4,7 +4,7 @@ Ceci est une implémentation du jeu de rôle  [Star Wars de Fantasy Flight Games
 
 - Pour le support de ce systeme de jeu : Discord [The Foundry](https://discord.gg/bNyxuk9) #starwars-ffg
 - Pour le support de la communauté Francaise : Discord [La Fonderie](https://discord.gg/pPSDNJk) #starwars-ffg
-- Lire ce document dans une autre langue : [English](https://github.com/StarWarsFoundryVTT/StarWarsFFG/blob/master/README.md)
+- Lire ce document dans une autre langue : [English](https://github.com/StarWarsFoundryVTT/Mandaar/blob/master/README.md)
 
 # Prérequis
 
@@ -17,7 +17,7 @@ Ce module est disponible dans la bibliothèque de modules intégré au logiciel.
 2. Aller dans la tabulation "Systèmes de Jeu"
 3. Cliquer sur le bouton "Installer un Système de jeu"
 4. Copier le lien suivant dans le champ "URL du Manifest":
-   https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json
+   https://raw.githubusercontent.com/Mandaar/StarWarsFFG/master/system.json
 5. Cliquer sur Installation, après quelques secondes le système devrait être installé.
 6. Installer (si ce n'est pas déja fait) le module "Special Dice Roller", voir en-dessous pour les détails.
 
